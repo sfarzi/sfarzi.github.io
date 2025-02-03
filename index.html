@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #f4f4f4;
             display: flex;
+            flex-direction: column;
         }
         .navbar {
             background-color: #333;
@@ -18,6 +19,10 @@
             padding: 10px 0;
             width: 100%;
             text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
         .navbar a {
             color: white;
@@ -27,6 +32,10 @@
         }
         .navbar a:hover {
             background-color: #575757;
+        }
+        .main-container {
+            display: flex;
+            margin-top: 50px; /* Adjust for fixed navbar */
         }
         .sidebar {
             width: 250px;
@@ -62,37 +71,39 @@
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <img src="progfile.jpeg" alt="Profile Picture">
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#research">Research Interests</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
     </div>
-    <div class="content">
-        <div class="navbar">
-            <a href="#about">About</a>
-            <a href="#research">Research Interests</a>
-            <a href="#publications">Publications</a>
-            <a href="#contact">Contact</a>
+    <div class="main-container">
+        <div class="sidebar">
+            <img src="progfile.jpeg" alt="Profile Picture">
         </div>
-        <h1>Your Name</h1>
-        <p><strong>Researcher in AI, Machine Learning, and Healthcare</strong></p>
-        
-        <h2 id="about">About Me</h2>
-        <p>I am a researcher specializing in AI, machine learning, and NLP, with a focus on applications in healthcare. My work involves knowledge graphs, LLMs, and ethical AI research.</p>
-        
-        <h2 id="research">Research Interests</h2>
-        <ul>
-            <li>Natural Language Processing</li>
-            <li>Knowledge Graphs</li>
-            <li>Ethical AI</li>
-            <li>Healthcare AI</li>
-        </ul>
-        
-        <h2 id="publications">Publications</h2>
-        <p><a href="#">View my Google Scholar profile</a></p>
-        
-        <h2 id="contact">Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>Website: <a href="#">yourwebsite.com</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+        <div class="content">
+            <h1>Your Name</h1>
+            <p><strong>Researcher in AI, Machine Learning, and Healthcare</strong></p>
+            
+            <h2 id="about">About Me</h2>
+            <p>I am a researcher specializing in AI, machine learning, and NLP, with a focus on applications in healthcare. My work involves knowledge graphs, LLMs, and ethical AI research.</p>
+            
+            <h2 id="research">Research Interests</h2>
+            <ul>
+                <li>Natural Language Processing</li>
+                <li>Knowledge Graphs</li>
+                <li>Ethical AI</li>
+                <li>Healthcare AI</li>
+            </ul>
+            
+            <h2 id="publications">Publications</h2>
+            <p><a href="#">View my Google Scholar profile</a></p>
+            
+            <h2 id="contact">Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Website: <a href="#">yourwebsite.com</a></p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+        </div>
     </div>
 </body>
 </html>
