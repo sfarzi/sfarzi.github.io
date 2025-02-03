@@ -1,81 +1,120 @@
-
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me - Saeed Farzi</title>
-    <meta property="og:locale" content="en-US">
-    <meta property="og:site_name" content="Saeed Farzi's Homepage">
-    <meta property="og:title" content="About me">
-    <meta property="og:description" content="About me">
-    <link rel="stylesheet" href="style.css">
+    <title>Dr. Saeed Farzi - Researcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        .sidebar img {
+            width: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        .sidebar p {
+            margin: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 270px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+            margin-left: 270px;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <div class="masthead">
-        <div class="masthead__inner-wrap">
-            <div class="masthead__menu">
-                <nav id="site-nav" class="greedy-nav">
-                    <button><div class="navicon"></div></button>
-                    <ul class="visible-links">
-                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="#">Saeed Farzi</a></li>
-                        <li class="masthead__menu-item"><a href="#publications">Publications</a></li>
-                        <li class="masthead__menu-item"><a href="#research">Research</a></li>
-                        <li class="masthead__menu-item"><a href="#teaching">Teaching</a></li>
-                        <li class="masthead__menu-item"><a href="CV.pdf">CV</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <div class="sidebar">
+        <img src="profile.jpeg" alt="Profile Picture">
+        <br>
+        <p><strong>Dr. Saeed Farzi</strong></p>
+        <br>
+        <p>Location: UK</p>
+        <br>
+        <p>Email: <a href="mailto:saeed@example.com" style="color: white;">saeed@example.com</a></p>
     </div>
-
+    
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#research">Research Interests</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </div>
+    
     <div class="container">
-        <aside class="sidebar">
-            <img src="profile.jpeg" alt="Saeed Farzi">
-            <h2>Saeed Farzi</h2>
-            <p>AI Engineer | Researcher | R&D Specialist</p>
-            <p>Email: <a href="mailto:sfarzi@fbk.eu">sfarzi@fbk.eu</a></p>
-            <p><a href="https://www.linkedin.com/in/saeed-farzi/">LinkedIn</a></p>
-            <p><a href="https://github.com/ecgResearch/HeartBert">GitHub</a></p>
-            <p><a href="https://scholar.google.com/citations?user=u-FkVj0AAAAJ">Google Scholar</a></p>
-        </aside>
+        <h1>Dr. Saeed Farzi</h1>
+        <p>AI Researcher | NLP | Knowledge Graphs | AI Ethics</p>
 
-        <main>
-            <section id="research">
-                <h2>Research</h2>
-                <p>My research focuses on AI-driven solutions in healthcare, NLP, ethical AI, and knowledge graph technologies.</p>
-                <ul>
-                    <li><b>HeartBERT:</b> ECG-based Large Language Model for Heart Disease Detection</li>
-                    <li><b>ICREAM Project:</b> AI-driven medical text processing funded by the EU</li>
-                    <li><b>Explainable AI in Healthcare:</b> AI-driven patient data analysis and diagnosis models</li>
-                    <li><b>Ethical AI and Bias Mitigation:</b> Developing AI models that are fair and unbiased</li>
-                </ul>
-            </section>
-            
-            <section id="publications">
-                <h2>Publications</h2>
-                <ul>
-                    <li>"Stance Detection on Social Media using Deep Learning" - Scientia Iranica (2024)</li>
-                    <li>"ReQuEST: Multi-task Model for Q&A Systems" - IEEE Access (2024)</li>
-                    <li>"A GA-based Algorithm meets the Fair Ranking Problem" - Information Processing and Management (2021)</li>
-                </ul>
-            </section>
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>I am a researcher specializing in AI, natural language processing, and knowledge graphs. My work focuses on AI ethics and healthcare applications.</p>
+        </div>
 
-            <section id="teaching">
-                <h2>Teaching</h2>
-                <ul>
-                    <li>Lecturer at K. N. Toosi University (2016 - Present)</li>
-                    <li>Courses Taught: AI, Machine Learning, NLP, Knowledge Graphs</li>
-                </ul>
-            </section>
+        <div class="section" id="research">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>AI in Healthcare</li>
+                <li>Natural Language Processing</li>
+                <li>Knowledge Graphs</li>
+                <li>AI Ethics</li>
+            </ul>
+        </div>
 
-            <section id="experience">
-                <h2>Experience</h2>
-                <ul>
-                    <li>Senior Researcher, Fondazione Bruno Kessler (FBK), Italy</li>
-                    <li>Visiting Researcher, University of Exeter, UK</li>
-                </ul>
-            </section>
-        </main>
+        <div class="section" id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="#">Title of Research Paper 1</a> - Journal Name, Year</li>
+                <li><a href="#">Title of Research Paper 2</a> - Conference Name, Year</li>
+            </ul>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:saeed@example.com">saeed@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/saeedfarzi">linkedin.com/in/saeedfarzi</a></p>
+        </div>
     </div>
 </body>
 </html>
