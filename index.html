@@ -12,9 +12,10 @@
             background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
         .navbar {
-            background-color: #333;
+            background-color: white;
             overflow: hidden;
             padding: 10px 0;
             width: 100%;
@@ -23,34 +24,27 @@
             top: 0;
             left: 0;
             z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar img {
+            height: 40px;
+            margin-right: 10px;
         }
         .navbar a {
-            color: white;
+            color: black;
             text-decoration: none;
             padding: 14px 20px;
             display: inline-block;
         }
         .navbar a:hover {
-            background-color: #575757;
-        }
-        .main-container {
-            display: flex;
-            margin-top: 50px; /* Adjust for fixed navbar */
-        }
-        .sidebar {
-            width: 250px;
-            background: white;
-            padding: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .sidebar img {
-            width: 100%;
-            border-radius: 10px;
+            background-color: #e0e0e0;
         }
         .content {
-            flex-grow: 1;
-            padding: 20px;
+            max-width: 800px;
+            padding: 80px 20px 20px;
             text-align: center;
         }
         h1, h2 {
@@ -72,38 +66,34 @@
 </head>
 <body>
     <div class="navbar">
+        <img src="progfile.jpeg" alt="Profile Picture">
         <a href="#about">About</a>
         <a href="#research">Research Interests</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
     </div>
-    <div class="main-container">
-        <div class="sidebar">
-            <img src="progfile.jpeg" alt="Profile Picture">
-        </div>
-        <div class="content">
-            <h1>Your Name</h1>
-            <p><strong>Researcher in AI, Machine Learning, and Healthcare</strong></p>
-            
-            <h2 id="about">About Me</h2>
-            <p>I am a researcher specializing in AI, machine learning, and NLP, with a focus on applications in healthcare. My work involves knowledge graphs, LLMs, and ethical AI research.</p>
-            
-            <h2 id="research">Research Interests</h2>
-            <ul>
-                <li>Natural Language Processing</li>
-                <li>Knowledge Graphs</li>
-                <li>Ethical AI</li>
-                <li>Healthcare AI</li>
-            </ul>
-            
-            <h2 id="publications">Publications</h2>
-            <p><a href="#">View my Google Scholar profile</a></p>
-            
-            <h2 id="contact">Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>Website: <a href="#">yourwebsite.com</a></p>
-            <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
-        </div>
+    <div class="content">
+        <h1>Your Name</h1>
+        <p><strong>Researcher in AI, Machine Learning, and Healthcare</strong></p>
+        
+        <h2 id="about">About Me</h2>
+        <p>I am a researcher specializing in AI, machine learning, and NLP, with a focus on applications in healthcare. My work involves knowledge graphs, LLMs, and ethical AI research.</p>
+        
+        <h2 id="research">Research Interests</h2>
+        <ul>
+            <li>Natural Language Processing</li>
+            <li>Knowledge Graphs</li>
+            <li>Ethical AI</li>
+            <li>Healthcare AI</li>
+        </ul>
+        
+        <h2 id="publications">Publications</h2>
+        <p><a href="#">View my Google Scholar profile</a></p>
+        
+        <h2 id="contact">Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>Website: <a href="#">yourwebsite.com</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
     </div>
 </body>
 </html>
